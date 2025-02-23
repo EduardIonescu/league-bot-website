@@ -8,7 +8,7 @@
   </head>
   <body class="text-slate-200 bg-zinc-800">
     <header
-      class="h-16 bg-[#3a4149] flex items-center justify-between px-4 xl:px-8"
+      class="h-16 bg-zinc-800 flex items-center justify-between px-4 xl:px-8"
     >
       <a class="text-xl block pb-1" href="/">League Bot</a>
       <a
@@ -18,19 +18,25 @@
         >Add to Discord</a
       >
     </header>
-    
+
     <section
-      class="relative h-[calc(100vh-4rem)] overflow-x-hidden text-slate-100 flex items-center"
+      class="relative h-[calc(100vh-4rem)] overflow-x-hidden text-slate-100 flex items-center gap-10 justify-center"
     >
       <img
-        class="absolute left-0 top-0 w-full min-h-fit min-w-fit max-h-[80%] -z-10 opacity-90"
+        class="absolute left-0 top-0 w-full min-h-fit min-w-fit max-h-[80%] -z-10 opacity-9"
         src="../public/bg.png"
         alt=""
       />
 
-      <article class="mx-auto w-96 mb-20">
-        <h1 class="text-5xl text-center font-bold">The best bot for League</h1>
-        <p class="text-xl text-center mt-8 mb-4">
+      <img
+        class="hidden lg:block w-96"
+        src="../public/logo-front-shadow.webp"
+        alt=""
+      />
+
+      <article class="w-[80vw] max-w-96 mb-20 text-center lg:text-left">
+        <h1 class="text-4xl sm:text-5xl font-bold">The best bot for League</h1>
+        <p class="text-xl mt-8 mb-4">
           League Bot is a complete and easy-to-use Discord bot, that servers
           worldwide use to entertain and grow their community.
         </p>
@@ -43,8 +49,9 @@
         >
       </article>
     </section>
+
     <section
-      class="min-h-[100vh] w-full py-12 max-w-[80vw] md:max-w-[60vw] mx-auto"
+      class="min-h-[100vh] w-full py-8 lg:py-12 max-w-[80vw] md:max-w-[60vw] mx-auto"
     >
       <h2 class="text-4xl font-bold text-center mx-auto max-w-[80vw] mb-8">
         What does the bot EVEN do?
@@ -52,14 +59,21 @@
 
       <hr class="border-zinc-700/50" />
 
-      <article class="flex items-center justify-center flex-col gap-3 my-8">
-        <h3 class="text-2xl font-bold text-center">Manage Users</h3>
-        <p class="text-lg text-center">
-          Add and remove users to be later used in the checking and betting
-          process
-        </p>
+      <article
+        class="flex items-center justify-center flex-col lg:flex-row gap-4 lg:justify-between my-8 lg:my-16"
+      >
+        <article
+          class="flex gap-4 flex-col text-center lg:text-left lg:max-w-80"
+        >
+          <h3 class="text-2xl font-bold">Manage Users</h3>
+          <p class="text-lg">
+            Add and remove users to be later used in the checking and betting
+            process
+          </p>
+        </article>
+
         <img
-          class="w-96 object-contain block shadow-lg"
+          class="w-96 object-contain block shadow-lg lg:w-[500px]"
           src="../public/add.webp"
           alt=""
         />
@@ -67,14 +81,20 @@
 
       <hr class="border-zinc-700/50" />
 
-      <article class="flex items-center justify-center flex-col gap-3 my-8">
-        <h3 class="text-2xl font-bold text-center">Check Active Matches</h3>
-        <p class="text-lg text-center">
-          Check to see if users are ingame. You can then use the buttons from
-          this message to start betting instances.
-        </p>
+      <article
+        class="flex items-center justify-center flex-col lg:flex-row gap-4 lg:justify-between my-8 lg:my-16"
+      >
+        <article
+          class="flex gap-4 flex-col text-center lg:text-right lg:max-w-80 lg:order-1"
+        >
+          <h3 class="text-2xl font-bold">Check Active Matches</h3>
+          <p class="text-lg">
+            Check to see if users are ingame. You can then use the buttons from
+            this message to start betting instances.
+          </p>
+        </article>
         <img
-          class="w-96 object-contain block shadow-lg"
+          class="w-96 object-contain block shadow-lg lg:w-[500px]"
           src="../public/check.webp"
           alt=""
         />
@@ -82,14 +102,21 @@
 
       <hr class="border-zinc-700/50" />
 
-      <article class="flex items-center justify-center flex-col gap-3 my-8">
-        <h3 class="text-2xl font-bold text-center">Place Bets On Matches</h3>
-        <p class="text-lg text-center">
-          You can start a betting instance on a user's match and bet on it
-          against your friends in the discord server.
-        </p>
+      <article
+        class="flex items-center justify-center flex-col lg:flex-row gap-4 lg:justify-between my-8 lg:my-16"
+      >
+        <article
+          class="flex gap-4 flex-col text-center lg:text-left lg:max-w-80"
+        >
+          <h3 class="text-2xl font-bold">Place Bets On Matches</h3>
+          <p class="text-lg">
+            You can start a betting instance on a user's match and bet on it
+            against your friends in the discord server.
+          </p>
+        </article>
+
         <img
-          class="w-96 object-contain block shadow-lg"
+          class="w-96 object-contain block shadow-lg lg:w-[500px]"
           src="../public/bet.webp"
           alt=""
         />
@@ -97,24 +124,55 @@
 
       <hr class="border-zinc-700/50" />
 
-      <article class="flex items-center justify-center flex-col gap-3 my-8">
-        <h3 class="text-2xl font-bold text-center">Handle Results</h3>
-        <p class="text-lg text-center">
-          The bot automatically handles the results of a match when it ends.
-          Everyone can see who the biggest winners and losers are.
-        </p>
+      <article
+        class="flex items-center justify-center flex-col lg:flex-row gap-4 lg:justify-between my-8 lg:my-16"
+      >
+        <article
+          class="flex gap-4 flex-col text-center lg:text-right lg:order-1 lg:max-w-80"
+        >
+          <h3 class="text-2xl font-bold">Handle Results</h3>
+          <p class="text-lg">
+            The bot automatically handles the results of a match when it ends.
+            Everyone can see who the biggest winners and losers are.
+          </p>
+        </article>
         <img
           class="w-96 object-contain block shadow-lg"
           src="../public/result.webp"
           alt=""
         />
+      </article>
+
+      <hr class="border-zinc-700/50" />
+
+      <article
+        class="flex items-center justify-center flex-col gap-4 my-8 lg:my-16"
+      >
+        <h3 class="text-2xl font-bold text-center">Images</h3>
+        <p class="text-lg text-center">
+          Show the result of the match. You also have the option to view the
+          live match and the players' details.
+        </p>
+
+        <article
+          class="flex items-center justify-center flex-col gap-4 lg:flex-row lg:justify-between w-full"
+        >
+          <img
+            class="w-96 object-contain block shadow-lg lg lg:w-[450px]"
+            src="../public/match-finished.webp"
+            alt=""
+          /><img
+            class="w-96 object-contain block shadow-lg lg:w-[500px]"
+            src="../public/match-live.webp"
+            alt=""
+          />
+        </article>
+      </article>
     </section>
 
     <hr class="border-zinc-700/50" />
 
-
-    <footer class="text-center my-8">
-
+    <footer class="text-center my-8 lg:my-16">
       <p>
         <span class="opacity-75">Created by</span>
         <a
@@ -126,7 +184,7 @@
         </a>
       </p>
       <p>
-        <span class="opacity-75"> Source code on </span>
+        <span class="opacity-75">Source code on</span>
         <a
           href="https://github.com/EduardIonescu/league-bot"
           target="_blank"
