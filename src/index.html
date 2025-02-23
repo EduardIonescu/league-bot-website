@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>League Bot</title>
+  </head>
+  <body class="text-slate-200 bg-zinc-800">
+    <header
+      class="h-16 bg-[#3a4149] flex items-center justify-between px-4 xl:px-8"
+    >
+      <a class="text-xl block pb-1" href="/">League Bot</a>
+      <a
+        class="rounded-full border-2 border-slate-200 text-md block font-semibold py-1 px-3 hover:bg-slate-200 hover:text-[#3a4149] transition-colors duration-200"
+        href="https://discord.com/oauth2/authorize?client_id=1325151673026482347"
+        target="_blank"
+        >Add to Discord</a
+      >
+    </header>
+    
+    <section
+      class="relative h-[calc(100vh-4rem)] overflow-x-hidden text-slate-100 flex items-center"
+    >
+      <img
+        class="absolute left-0 top-0 w-full min-h-fit min-w-fit max-h-[80%] -z-10 opacity-90"
+        src="../public/bg.png"
+        alt=""
+      />
+
+      <article class="mx-auto w-96 mb-20">
+        <h1 class="text-5xl text-center font-bold">The best bot for League</h1>
+        <p class="text-xl text-center mt-8 mb-4">
+          League Bot is a complete and easy-to-use Discord bot, that servers
+          worldwide use to entertain and grow their community.
+        </p>
+
+        <a
+          class="rounded-full border-4 pb-1.5 border-slate-200 text-lg block font-bold py-1 px-3 hover:bg-slate-200 hover:text-[#3a4149] transition-colors duration-200 text-center"
+          href="https://discord.com/oauth2/authorize?client_id=1325151673026482347"
+          target="_blank"
+          >Add to Discord</a
+        >
+      </article>
+    </section>
+    <section
+      class="min-h-[100vh] w-full py-12 max-w-[80vw] md:max-w-[60vw] mx-auto"
+    >
+      <h2 class="text-4xl font-bold text-center mx-auto max-w-[80vw] mb-8">
+        What does the bot EVEN do?
+      </h2>
+
+      <hr class="border-zinc-700/50" />
+
+      <article class="flex items-center justify-center flex-col gap-3 my-8">
+        <h3 class="text-2xl font-bold text-center">Manage Users</h3>
+        <p class="text-lg text-center">
+          Add and remove users to be later used in the checking and betting
+          process
+        </p>
+        <img
+          class="w-96 object-contain block shadow-lg"
+          src="../public/add.webp"
+          alt=""
+        />
+      </article>
+
+      <hr class="border-zinc-700/50" />
+
+      <article class="flex items-center justify-center flex-col gap-3 my-8">
+        <h3 class="text-2xl font-bold text-center">Check Active Matches</h3>
+        <p class="text-lg text-center">
+          Check to see if users are ingame. You can then use the buttons from
+          this message to start betting instances.
+        </p>
+        <img
+          class="w-96 object-contain block shadow-lg"
+          src="../public/check.webp"
+          alt=""
+        />
+      </article>
+
+      <hr class="border-zinc-700/50" />
+
+      <article class="flex items-center justify-center flex-col gap-3 my-8">
+        <h3 class="text-2xl font-bold text-center">Place Bets On Matches</h3>
+        <p class="text-lg text-center">
+          You can start a betting instance on a user's match and bet on it
+          against your friends in the discord server.
+        </p>
+        <img
+          class="w-96 object-contain block shadow-lg"
+          src="../public/bet.webp"
+          alt=""
+        />
+      </article>
+
+      <hr class="border-zinc-700/50" />
+
+      <article class="flex items-center justify-center flex-col gap-3 my-8">
+        <h3 class="text-2xl font-bold text-center">Handle Results</h3>
+        <p class="text-lg text-center">
+          The bot automatically handles the results of a match when it ends.
+          Everyone can see who the biggest winners and losers are.
+        </p>
+        <img
+          class="w-96 object-contain block shadow-lg"
+          src="../public/result.webp"
+          alt=""
+        />
+    </section>
+
+    <hr class="border-zinc-700/50" />
+
+
+    <footer class="text-center my-8">
+
+      <p>
+        <span class="opacity-75">Created by</span>
+        <a
+          href="https://github.com/EduardIonescu"
+          target="_blank"
+          class="border-b-[1px] border-transparent font-medium transition-colors hover:border-white/80"
+        >
+          Eduard
+        </a>
+      </p>
+      <p>
+        <span class="opacity-75"> Source code on </span>
+        <a
+          href="https://github.com/EduardIonescu/league-bot"
+          target="_blank"
+          class="border-b-[1px] border-transparent font-medium transition-colors hover:border-white/80"
+        >
+          Github
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
