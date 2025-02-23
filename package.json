@@ -1,12 +1,23 @@
 {
   "name": "league-bot-website",
   "module": "index.ts",
-  "type": "module",
-  "private": true,
+  "scripts": {
+    "start": "bun index.ts",
+    "pm2:start": "bunx pm2 start bun --name league-bot-website --log pm2.log --time --max-memory-restart 300M -- start ",
+    "pm2:stop": "bunx pm2 stop league-bot-website",
+    "pm2:restart": "bunx pm2 restart league-bot-website",
+    "pm2:delete": "bunx pm2 delete league-bot-website",
+    "pm2:list": "bunx pm2 list"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "pm2": "^5.4.3"
   }
 }
