@@ -2,7 +2,7 @@
   "name": "league-bot-website",
   "module": "index.ts",
   "scripts": {
-    "start": "bun index.ts",
+    "start": "bun run index.ts",
     "pm2:start": "bunx pm2 start bun --name league-bot-website --log pm2.log --time --max-memory-restart 300M -- start ",
     "pm2:stop": "bunx pm2 stop league-bot-website",
     "pm2:restart": "bunx pm2 restart league-bot-website",
